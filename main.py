@@ -11,7 +11,7 @@ def hello():
 @app.route('/echo/<name>')
 def echo(name):
     print("This was placed in the url: new-{name}")
-    val = {"new-name haha": name}
+    val = {"new-name": name}
     return jsonify(val)
 
 
